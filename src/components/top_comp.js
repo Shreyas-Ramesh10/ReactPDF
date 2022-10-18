@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image } from '@react-pdf/renderer';
-import LebronStretch from "../photos/company_photo.png";
+import LebronStretch from "../photos/Ivan.png";
 
 
 const styles = StyleSheet.create({
@@ -23,9 +23,12 @@ const styles = StyleSheet.create({
         fontSize:10,
     },
     image:{
-        justifyContent:"flex-start",
-        width: 400,
-        height: 200,
+        marginTop:30,
+        justifyContent:"flex-end",
+        height:70,
+        width:300
+       
+        
        
     }
 });
