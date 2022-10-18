@@ -8,6 +8,7 @@ import DtpInfo from "./dtp_info";
 import TopComponent from "./top_comp";
 import TopMid from "./top_mid";
 import Footer from "./Footer";
+import SignImage from "./sign-image";
 
 const styles = StyleSheet.create({
  
@@ -48,6 +49,8 @@ const styles = StyleSheet.create({
   },
 });
 
+const companyName = "Ivan's Collision Center";
+
 const PDFFile = () => {
   return (
     <Document>
@@ -59,22 +62,17 @@ const PDFFile = () => {
         <DtpHeading/>
         <DtpInfo/>
         <Text style={styles.text}>
-        I hereby authorize Ivan's Collision Center to make the above specified repair or repairs from the appraiser's estimate. I
+        I hereby authorize {companyName} to make the above specified repair or repairs from the appraiser's estimate. I
 "understand that payment in full will be due before the vehicle can be released, including additional supplemental damage charges, and hereby grant you and/or your employees permission to operate the vehicle herein described on streets, highways or elsewhere for the purposes of testing and/or inspection. An express mechanic's lien is hereby acknowledged on above vehicle to secure the amount of repairs thereto. If I decide not to repair this vehicle, I understand that any storage,"
 "labor, and administrative fees due on the claim will need to be paid in full before the vehicle can be released. I will not hold you responsible for any lost articles left in the vehicle, in case of fire,accident or any other cause beyond our control. Old parts removed from the vehicle will be disposed off unless otherwise instructed. Iauthorize you to act as power of attorney to sign."
         </Text>
 
         <Text style={styles.text}>
         "By signing this statement, I hereby authorize the insurance to make ALL claims and/or supplement payments due to for the"
-"repairs of my vehicle directly to Ivan's Collision Center, 332 Irving St. Framingham MA 01702."
+"repairs of my vehicle directly to {companyName}, 332 Irving St. Framingham MA 01702."
         </Text>
+        <SignImage/>
         <Footer/>
-        <Text
-          style={styles.pageNumber}
-          render={({ pageNumber, totalPages }) =>
-            `${pageNumber} / ${totalPages}`
-          }
-        />
       </Page>
     </Document>
   );

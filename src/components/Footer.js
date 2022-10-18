@@ -5,7 +5,6 @@ import { Text, View, StyleSheet, Image } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
     floatContainer : {  
-        marginTop:45,
         flexDirection: "row",   
         
     },
