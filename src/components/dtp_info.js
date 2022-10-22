@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     floatContainer : {
         marginTop:10,
         flexDirection: "row",
-        justifyContent:"space-between",
+        justifyContent:"center",
         border: 1,
         padding:2
         
@@ -14,22 +14,21 @@ const styles = StyleSheet.create({
     },
     floatChild: {
         
-        width: 100,
+        width: 420,
         height: 100,
     },
     
     floatChild2: {
         
-        width: 100,
+        width: 350,
         height: 100,
        
     },
     floatChild3:{
         
-        width: 100,
+        width: 250,
         height: 100,
         justifyContent:"flex-start",
-        marginRight:40
     },
     text:{
         marginTop:5,
@@ -41,12 +40,13 @@ const DtpInfo = () => (
     <View style={styles.floatContainer}>
         
         <View style={styles.floatChild} >
-            <Text style={styles.text}>Claim #:</Text>
+            <Text style={styles.text}>Claim #:123456789221 </Text>
             <Text style={styles.text}>Date in:</Text>
             <Text style={styles.text}>Adj. Name:</Text>
             <Text style={styles.text}>Adjuster Fax:</Text>
             <Text style={styles.text}>Appraiser Name:</Text>
             <Text style={styles.text}>insured By:</Text>
+            <Text style={styles.text}>GEICO INSURANCE CO</Text>
         </View>
         
 

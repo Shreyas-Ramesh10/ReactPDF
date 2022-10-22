@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     },
     floatChild2: {
         justifyContent:"space-between",
-        width: 100,
+        width: 250,
         height: 100,
         padding: 5,
         marginRight:20,
@@ -57,16 +57,15 @@ const InvoiceTitle = () => (
         
         <View style={styles.floatChildParent} >
             <View style={styles.floatChild2} >
-                <Text style={styles.text} >VIN (Scan):</Text>
-                <Text style={styles.text} >VIN (manual):</Text>
+                <Text style={styles.text} >VIN (Scan):WDDNG9i9023i032</Text>
+                <Text style={styles.text} >VIN (manual):WDDNG9i9023i032</Text>
                 <Text style={styles.text} >Year: 2006</Text>
                 <Text style={styles.text} >Model: ODYSSEY</Text>
-                <Text style={styles.text} >Make: HONDA</Text>
+                <Text style={styles.text} >Make:Mercedes-Benz</Text>
                 <Text style={styles.text} >License Plate:</Text>
+                <Text style={styles.text} >Color: GRY</Text>
             </View>
-            <View style={styles.floatChild3} >
-               <Text style={styles.text} >Color: GRY</Text>
-            </View>
+            
         </View>
     </View>
 

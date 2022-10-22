@@ -2,13 +2,14 @@ import "./App.css";
 import React from "react";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 
-import PDFFile2 from "./compenents2/PDFFile2"
+import PDFFile2 from "./compenents2/PDFFile2";
+import PDFFile from "./components/PDFFile";
 
 
 const App = () => {
   return (
     <div className="App">
-    <PDFDownloadLink document = { <PDFFile2/> } fileName="FORM">
+    <PDFDownloadLink document = { <PDFFile/> } fileName="FORM">
       {({loading}) => 
       loading ? (
         <button>Loading...</button>
